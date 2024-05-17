@@ -1,16 +1,5 @@
-let login = false;
-let user = "martin";
-let pass = "1234";
-let userName = prompt("Ingrese su usuario");
-let password = prompt("Ingrese su contraseña");
-
-const signIn = (userName, password, user, pass) => {
-    if (userName === user && password === pass) {
-        alert(`¡Bienvenido ${user}, lo estábamos esperando!`)
-        login = true;
-    } else {
-        alert(`Usuario y/o contraseña incorrectos.`)
-    }
+const productos = ["Remeras","Pantalones","Camisas","Gorras"];
+for (let i = 0; i < productos.length; i++) {
+    console.log("Producto " + (index + 1) + ":" + productos[i])
 }
 
-signIn(userName,password,user,pass);
